@@ -5,23 +5,65 @@ body {
   overflow: hidden;
 }
 
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    height: 100%;
+  }
+}
+@media screen and (min-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    width: 100%;
+  }
+}
+
+#myVideo {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 .hero {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.hero-inner {
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .hero h1 {
     font-size: 5em;
-    margin-top: 0;
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
+    margin-left: 1em;
+    text-indent: -0.5em;
+}
+
+.socialImg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 1em;
+  height: 30px;
+  cursor: pointer;
 }
