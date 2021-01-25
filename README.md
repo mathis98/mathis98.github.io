@@ -1,2 +1,2 @@
 # mathis98.github.io
-github pages page
+My personal page hosted via github pages. Available at [mathisarend.com](https://www.mathisarend.com)
