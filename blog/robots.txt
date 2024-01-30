@@ -1,0 +1,7 @@
+User-agent: *
+Sitemap: mathisarend.com/blog/sitemap.xml
+Disallow: /ghost/
+Disallow: /p/
+Disallow: /email/
+Disallow: /r/
+Disallow: /webmentions/receive/
