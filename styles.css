@@ -59,11 +59,25 @@ body {
     text-indent: -0.5em;
 }
 
-.socialImg {
+.socials {
   position: fixed;
   bottom: 0;
   left: 0;
-  margin: 1em;
-  height: 30px;
-  cursor: pointer;
+  width: calc(100vw - 2em);
+  padding: 1em;
+}
+
+.socialImg {
+  /* position: fixed;
+  bottom: 0; */
+  float: right;
+  /* left: 0; */
+  margin: .6em;
+  height: 40px;
+  /* cursor: pointer; */
+}
+
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
