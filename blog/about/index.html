@@ -96,8 +96,36 @@
     <link href="https://www.mathisarend.com/blog/webmentions/receive/" rel="webmention">
     <script defer src="./../public/cards.min.js?v=514ce5c6bd"></script>
     <link rel="stylesheet" type="text/css" href="./../public/cards.min.css?v=514ce5c6bd">
-    <style>
-  .nav-sign-up {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" />
+
+<style>
+    .nav-github a,
+    .nav-mastodon a,
+    .nav-gitlab a,
+    .nav-soundcloud a{
+        font-size: 0 !important;
+    }
+
+    .nav-github a::before,
+    .nav-mastodon a::before,
+    .nav-gitlab a::before,
+    .nav-soundcloud a::before{
+        font-family: "Font Awesome 6 Brands";
+        display: inline-block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .nav-github a::before {content: "\f09b"}
+    .nav-mastodon a::before {content: "\f4f6"}
+    .nav-gitlab a::before {content: "\f296"}
+    .nav-soundcloud a::before {content: "\f1be"}
+  
+  .nav-sign-up, .gh-search, .gh-navigation-actions {
     display:none
   }
 </style><style>:root {--ghost-accent-color: #FF1A75;}</style>
@@ -123,7 +151,6 @@
             <ul class="nav">
     <li class="nav-home"><a href="https://www.mathisarend.com/blog/">Home</a></li>
     <li class="nav-about nav-current"><a href="https://www.mathisarend.com/blog/about/">About</a></li>
-    <li class="nav-github"><a href="https://github.com/mathis98">GitHub</a></li>
 </ul>
 
         </nav>
@@ -161,7 +188,13 @@
                     Mathis&#x27; Personal Blog
             </span>
             <nav class="gh-footer-menu">
-                
+                <ul class="nav">
+    <li class="nav-github"><a href="https://github.com/mathis98">GitHub</a></li>
+    <li class="nav-gitlab"><a href="https://gitlab.com/mathis2">GitLab</a></li>
+    <li class="nav-mastodon"><a href="https://mastodon.social/@hacktron">Mastodon</a></li>
+    <li class="nav-soundcloud"><a href="https://soundcloud.com/dj-hacktron">SoundCloud</a></li>
+</ul>
+
             </nav>
             <div class="gh-footer-copyright">
                 Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
