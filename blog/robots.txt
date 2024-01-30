@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: http://www.mathisarend.com/blog/blog/sitemap.xml
+Sitemap: http://www.mathisarend.com/blog/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/
 Disallow: /email/
