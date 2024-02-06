@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Home Automation Setup</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preload" as="style" href="/assets/built/screen.css?v=9237915363" />
+    <link rel="preload" as="script" href="/assets/built/casper.js?v=9237915363" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=9237915363" />
+
+    <link rel="canonical" href="https://www.mathisarend.com/home-automation/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Mathis Arend">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Home Automation Setup">
+    <meta property="og:description" content="Jump to Current Setup
+
+In this post I describe the current setup of my home automation system as well as some past developments. Finally, I will also detail what I have planned for the future.
+
+
+History
+
+
+My Home Automation journey started as I was gifted an old original Google Home">
+    <meta property="og:url" content="https://www.mathisarend.com/home-automation/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta property="article:published_time" content="2024-02-05T04:34:38.000Z">
+    <meta property="article:modified_time" content="2024-02-06T06:57:55.000Z">
+    <meta property="article:tag" content="Home Automation">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home Automation Setup">
+    <meta name="twitter:description" content="Jump to Current Setup
+
+In this post I describe the current setup of my home automation system as well as some past developments. Finally, I will also detail what I have planned for the future.
+
+
+History
+
+
+My Home Automation journey started as I was gifted an old original Google Home">
+    <meta name="twitter:url" content="https://www.mathisarend.com/home-automation/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Mathis Arend">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Home Automation">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Mathis Arend",
+        "url": "https://www.mathisarend.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.mathisarend.com/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Mathis Arend",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.gravatar.com/avatar/155c19c38b596baba55957b2700e1ca6?s=250&r=x&d=mp",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://www.mathisarend.com/author/mathis/",
+        "sameAs": []
+    },
+    "headline": "Home Automation Setup",
+    "url": "https://www.mathisarend.com/home-automation/",
+    "datePublished": "2024-02-05T04:34:38.000Z",
+    "dateModified": "2024-02-06T06:57:55.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&ixlib=rb-4.0.3&q=80&w=2000",
+        "width": 1200,
+        "height": 800
+    },
+    "keywords": "Home Automation",
+    "description": "Jump to Current Setup\n\nIn this post I describe the current setup of my home automation system as well as some past developments. Finally, I will also detail what I have planned for the future.\n\n\nHistory\n\n\nMy Home Automation journey started as I was gifted an old original Google Home smart speaker, and a Philipps Hue Bridge with 2 white and color bulbs. I quickly connected the speaker and used the Google Home App to add the Hue system into the mix. While one speaker and some bulbs were enough for",
+    "mainEntityOfPage": "https://www.mathisarend.com/home-automation/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.77">
+    <link rel="alternate" type="application/rss+xml" title="Mathis Arend" href="https://www.mathisarend.com/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="067a3485003c22d8f415b606ba" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://www.mathisarend.com/" crossorigin="anonymous"></script>
+    
+    <link href="https://www.mathisarend.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=9237915363"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=9237915363">
+    <style>
+  .gh-head-actions, .gh-powered-by, .gh-search{
+    display: none;
+  }
+</style><style>:root {--ghost-accent-color: #35384b;}</style>
+
+</head>
+<body class="post-template tag-home-automation is-head-left-logo has-cover">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head outer">
+        <div class="gh-head-inner inner">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo no-image" href="https://www.mathisarend.com">
+                        Mathis Arend
+                </a>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-coffee"><a href="https://www.mathisarend.com/tag/coffee/">Coffee</a></li>
+    <li class="nav-server"><a href="https://www.mathisarend.com/tag/server/">Server</a></li>
+    <li class="nav-film"><a href="https://www.mathisarend.com/tag/photo-film/">Film</a></li>
+    <li class="nav-home-automation"><a href="https://www.mathisarend.com/tag/home-automation/">Home Automation</a></li>
+    <li class="nav-other"><a href="https://www.mathisarend.com/tag/other/">Other</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-content">
+        
+
+
+
+<main id="site-main" class="site-main">
+<article class="article post tag-home-automation image-small">
+
+    <header class="article-header gh-canvas">
+
+        <div class="article-tag post-card-tags">
+                <span class="post-card-primary-tag">
+                    <a href="/tag/home-automation/">Home Automation</a>
+                </span>
+        </div>
+
+        <h1 class="article-title">Home Automation Setup</h1>
+
+
+        <div class="article-byline">
+        <section class="article-byline-content">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/mathis/" class="author-avatar">
+                        <img class="author-profile-image" src="https://www.gravatar.com/avatar/155c19c38b596baba55957b2700e1ca6?s&#x3D;250&amp;r&#x3D;x&amp;d&#x3D;mp" alt="Mathis Arend" />
+                    </a>
+                </li>
+            </ul>
+
+            <div class="article-byline-meta">
+                <h4 class="author-name"><a href="/author/mathis/">Mathis Arend</a></h4>
+                <div class="byline-meta-content">
+                    <time class="byline-meta-date" datetime="2024-02-05">Feb 5, 2024</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> 7 min read</span>
+                </div>
+            </div>
+
+        </section>
+        </div>
+
+            <figure class="article-image">
+                <img
+                    srcset="https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                            https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                            https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                            https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+                    sizes="(min-width: 1400px) 1400px, 92vw"
+                    src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDV8fHNtYXJ0JTIwaG9tZXxlbnwwfHx8fDE3MDcxMDc2MDV8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000"
+                    alt="Home Automation Setup"
+                />
+                    <figcaption><span style="white-space: pre-wrap;">Photo by </span><a href="https://unsplash.com/@sebastian_s?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit"><span style="white-space: pre-wrap;">Sebastian Scholz (Nuki)</span></a><span style="white-space: pre-wrap;"> / </span><a href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit"><span style="white-space: pre-wrap;">Unsplash</span></a></figcaption>
+            </figure>
+
+    </header>
+
+    <section class="gh-content gh-canvas">
+        <div class="kg-card kg-button-card kg-align-center"><a href="https://www.mathisarend.com/home-automation/#current-setup" class="kg-btn kg-btn-accent">Jump to Current Setup</a></div><p>In this post I describe the current setup of my home automation system as well as some past developments. Finally, I will also detail what I have planned for the future.</p><h2 id="history">History</h2>
+<p>My Home Automation journey started as I was gifted an old original Google Home smart speaker, and a Philipps Hue Bridge with 2 white and color bulbs. I quickly connected the speaker and used the Google Home App to add the Hue system into the mix. While one speaker and some bulbs were enough for my dorm room I quickly outgrew this setup when moving to my current 2-bedroom apartment. Eventually I added additional bulbs for everywhere possible and multiple Google Nest smart speakers. For the kitchen, bedroom, and bathroom I added regular size Google Nests and for the living room a Nest Mini. That is due to the fact I already had nice speakers in the living room so the Nest Mini was mainly for voice control.</p>
+<p>Because I wantedmore control over my WiFi as well and the signal was quite weak in my kitchen I decided to add a Google WiFi Router to my system with an additional mesh hub near my kitchen. This mesh setup worked quite nicely and additionally the mesh hub serves as a speaker and smart voice control. I really like the idea that the router can easily be configured via an app. However, I do feel like some more advanced options are not available.</p>
+<p>My system continued to grow and I added three more components: a smart TV, smart power strip, and smart vacuum cleaner.</p>
+<p>As smart TV I opted to go with a Philips Android TV. It runs Android so it ties in nicely to the Google Home system. Further, it comes with Ambilight which I quite like and Google Cast included.</p>
+<p>The power strip I got is a nice Koogeek KLOE4 with four sockets and 4 USB ports additionally. Through their app it was easily possible to add to my smart home system.</p>
+<p>The final piece I added was a Roomba smart vacuum cleaner. While I really enjoy cooking the other housework I could do without. That is why I really like a vacuum robot. Again it could be added easily to my system and controlled either through the Google Home Dashboard or via voice control. I also set it to clean at the same time everyday.</p>
+<h3 id="issues">Issues</h3>
+<ul>
+<li>Not all bulb sockets support Philips Hue. In my bathroom I have special bulbs I thought were GU10 at first. However, they are slightly different. This leaves me in a situation where most of the rooms are in the smart light system while others are still operated manually. Eventualy I plan to add these rooms as well either through SwitchBots or something like Shellys. More On that in <a href="https://www.mathisarend.com/home-automation#planned-setup">Planned Setup</a>.</li>
+<li>When running the Roomba everyday you have to remember to keep the surroundings clean so it does not suck in cables and the like. This is why I disabled this routine at some point and only run it manually now.</li>
+<li>There are two reasons I eventually turned away from a wholly Google-based system: 1) I wanted more in-depth control over my smart home 2) I started to feel uncomfortable in general with the amount of data Google collects. Thus, having a Google smart speaker in every rooma and a Google Router was not ideal. Therefore, I eventually sold all Google hardware and switched to a more open and controlled solution based on Home Assistant.</li>
+</ul>
+<h2 id="current-setup">Current Setup</h2>
+<p>This is a quick overview of most devices in my smart home system:</p>
+<ul>
+<li><strong>Home Assistant</strong> on Raspberry Pi</li>
+<li><strong>ZigBee</strong> stick (Philips Hue, Tradfri <strong>bulbs</strong>, Tradfri <strong>switches</strong>)</li>
+<li><strong>Roomba</strong></li>
+<li><strong>Smart TV</strong></li>
+<li><strong>Printer</strong></li>
+<li><strong>Router</strong></li>
+<li>Smart <strong>power strip</strong></li>
+<li><strong>Server</strong></li>
+</ul>
+<p>As mentioned above my current setup is based on <strong><a href="https://www.home-assistant.io/">Home Assistant</a></strong>. When I searched for an open source smart home solution several years ago I first stumbled upon the Java-based <a href="https://www.openhab.org/">OpenHab</a>. This still seems like a nice solution but Home Assistant has a much larger community and cleaner and more modern look. That is why I chose it. When I got a <a href="https://www.raspberrypi.com/">Raspberry Pi</a> 4B with 8GB RAM it was the perfect opportunity for me to run Home Assistant. After the straightforward installation it was easy to add Philips Hue, <strong>Roomba</strong>, and my <strong>smart TV</strong>.</p>
+<p>I subsequently sold all my Nest smart speakers and switched to a different router. To my surprise it was also straightforward to add my <strong>printer</strong> and <strong>router</strong> to Home Assistant. This way I can monitor ink levels and internet connections and even use these for automations.</p>
+<p>I also expanded my lighting setup. As Philips Hue is quite expensive I searched for alternatives. I found quite cheap ZigBee based bulbs from IKEA. As <strong>ZigBee</strong> is an open standard also used by Philips Hue it is possible to add these to a Hue Bridge. Further, IKEA also adds under cabinet kitchen lights with ZigBee so I could light my kitchen as well.</p>
+<p>With this setup I was already quite content. However, several parts were still non open-source and not completely under my control: my smart TV, Philips Hue, and my smart power strip. For my smart TV I tried out Kodi on an old Raspberry Pi I still had lying around. This was a nice solution. However, the old hardware was unable to run Kodi smoothly. Because there was a severe Raspberry Pi shortage at that time I was unable to get a newer one for a reasonable price. That is why I discontinued Kodi. I will definitely return to it at some point!</p>
+<p>Philips Hue was easily replacable with a simple ZigBee stick. I went with the <a href="https://phoscon.de/en/conbee2">Phoscon Conbee II</a>. It supports a wide range of devices and is easily integrated into Home Assistant. It completely replaced my Hue Bridge. Another nice touch is that I could add <strong>IKEA Tradfri</strong> smart switches so guests without the Home Assitant app are able to switch lights as well.</p>
+<p>The last component that was still dependant on a chinese cloud was my Koogeek power strip. Luckily, I found the <strong><a href="https://tasmota.github.io/docs/">Tasmota project</a></strong> which provides a local replacement for ESP-based devices. It works by faking an update server that way replacing the stock firmware with Tasmota. The official website does not have a configuration for my exact power strip. Luckily I found one <a href="https://templates.blakadder.com/koogeek_kloe4.html">here</a>. After flashing Tasmota I could add the power strip to Home Assistant through MQTT. For that I installed the Mosquitto Broker.</p>
+<p>As my Google Nest devices had to go I no longer have smart speakers. Voice control and multiroom audio was nice, though. I briefly tested out snapcast for multiroom audio and MyCroft as voice assistant on the old Raspberry Pi with a connected webcam mic. Especially snapcast worked quite nicely. MyCroft still had some problems. The plan to run this setup in every room was cut short by the Raspberry Pi shortage. Eventually I plan to add speakers with something like a Raspberry Pi Mini running snapcast to every room for multiroom audio. Right now I am waiting for the Home Assitant voice assistant to mature so then I can use that.</p>
+<p>In a <a href="https://www.mathisarend.com/current-server/">different post</a> I detail my current server setup. I also monitor and control this server in Home Assistant through the <a href="https://github.com/tomaae/homeassistant-truenas">TrueNAS integration</a>.</p>
+<h3 id="automations">Automations</h3>
+<p>These are some of the automations I use in Home Assistant:</p>
+<ul>
+<li>Lights out when everyone leaves</li>
+<li>Lights on when someone comes back home and it is dark</li>
+<li>TV lights when TV turns on</li>
+<li>Run Roomba everyday</li>
+<li>Notifications for low battery/ink</li>
+</ul>
+<h2 id="discontinued">Discontinued</h2>
+<p>As of right now I have discontinued multiroom audio with snapcast and Mopidy as music system, Mycroft, Kodi, and everything Google.</p>
+<h2 id="planned-setup">Planned Setup</h2>
+<p>In the future I plan to expand my setup a lot. One of the most important additions for me would be <strong>multiroom audio</strong>. For that I need a nice pair of speakers in every room to which a Raspberry Pi Mini is connected running snapcast. Then a central Raspberry Pi would run Mopidy over MPD as a music player. Also I would add spotify control through something like <a href="https://github.com/dtcooper/raspotify">Raspotify</a>. I already tried and tested this setup. Once I have this setup it would be worth checking out whether a DAC like the <a href="https://www.hifiberry.com/">HifiBerry</a> improves the sound quality. One thing I would yet have to figure out is a nice interface to group rooms and control which music the zones are playing in Home Assistant.</p>
+<p>After I set up this multiroom audio system I would like to add voice again. If the Home Assistant <strong>Voice Assistant</strong> already matured by that point this could be an option. Other options I consider are <a href="http://mycroft.ai/">Mycroft</a> and Rhasspy <a href="https://rhasspy.readthedocs.io/">Rhasspy</a>. The latter is nice since it runs fully locally. However I could not find a nice solution to conduct a web search as fallback. Once this component is implemented I want to connect the voice assistant and multiroom audio. Every single speaker should be able to record a command and respond accordingly. Also starting music in different zones should be possible. Since I plan on using Raspberry Pi Minis they are probably not powerfull enough for voice control. An option would be to use every Raspberry Pi Mini as "satellite" which records the voice, sends it back to a central processor and responds with the corresponding answer.</p>
+<p>I would also like to add additional <strong>smart sockets</strong>. Preferably ones that are able to monitor energy usage. I could use them for my dryer or dishwasher and trigger automations once the cycles finish.</p>
+<p>Further, it would be nice to add even more <strong>automations</strong>. Right now I mainly have a smart home with controls but not really automated yet. One option I looked into is a bed occupancy sensor based on weight cells that could for example turn off lights, music, and TV when I lie down at night.</p>
+<p>The last planned addition in the near future is to <strong>bring all lights into the smart home control</strong> including the ones with weird sockets. One option would be to use something like a <a href="https://www.switch-bot.com/">SwitchBot</a> Bot. This is a simple device that physically presses buttons like a light switch. This way I could switch the bathroom lights. A more involved and professional option would be to use something like <a href="https://www.shelly.com/en">Shellys</a>. These are small relays you put under a light switch in a wall controllable via WiFi. The nice thing is that you do not see them and can still use your normal light switches and bulbs. If this option works nicely I would like to eventually switch to Shellys only and ditch the smart bulbs. That way visitors are able to easily understand the system while I could switch it via Home Assistant.</p>
+<p>Obviously there are many more options for a smart home. I am constantly monitoring what is on the open source market.</p>
+
+    </section>
+
+
+</article>
+</main>
+
+
+
+
+            <aside class="read-more-wrap outer">
+                <div class="read-more inner">
+                        
+<article class="post-card post keep-ratio">
+
+    <a class="post-card-image-link" href="/current-camera-setup/">
+
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1493804714600-6edb1cd93080?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fFN1cGVyJTIwOHxlbnwwfHx8fDE3MDY4NzA3MjF8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1493804714600-6edb1cd93080?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fFN1cGVyJTIwOHxlbnwwfHx8fDE3MDY4NzA3MjF8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1493804714600-6edb1cd93080?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fFN1cGVyJTIwOHxlbnwwfHx8fDE3MDY4NzA3MjF8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1493804714600-6edb1cd93080?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fFN1cGVyJTIwOHxlbnwwfHx8fDE3MDY4NzA3MjF8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1493804714600-6edb1cd93080?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDN8fFN1cGVyJTIwOHxlbnwwfHx8fDE3MDY4NzA3MjF8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="Current Camera Setup"
+            loading="lazy"
+        />
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/current-camera-setup/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Current Camera Setup
+                </h2>
+            </header>
+                <div class="post-card-excerpt">In this post I detail the current setup I own camera-wise. It will be updated continuously based on the newest information.
+
+
+Polaroid
+
+
+
+SX-70
+
+
+My first Polaroid was an SX-70 from the 70s. Specifically the Alpha model without Tripod mount. It is a fantastic camera as its lens is completely made</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2024-02-02">Feb 2, 2024</time>
+                <span class="post-card-meta-length">5 min read</span>
+        </footer>
+
+    </div>
+
+</article>
+                        
+<article class="post-card post keep-ratio">
+
+    <a class="post-card-image-link" href="/current-server/">
+
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1523655223303-4e9ef5234587?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxtb3RoZXJib2FyZHxlbnwwfHx8fDE3MDY4NDg0NTZ8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1523655223303-4e9ef5234587?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxtb3RoZXJib2FyZHxlbnwwfHx8fDE3MDY4NDg0NTZ8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1523655223303-4e9ef5234587?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxtb3RoZXJib2FyZHxlbnwwfHx8fDE3MDY4NDg0NTZ8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1523655223303-4e9ef5234587?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxtb3RoZXJib2FyZHxlbnwwfHx8fDE3MDY4NDg0NTZ8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1523655223303-4e9ef5234587?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDI4fHxtb3RoZXJib2FyZHxlbnwwfHx8fDE3MDY4NDg0NTZ8MA&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="Current Hardware"
+            loading="lazy"
+        />
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/current-server/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Current Hardware
+                </h2>
+            </header>
+                <div class="post-card-excerpt">In this post I describe my current hardware setup. It will be constantly updated whenever something changes. The old setup will still be included so you can see the history nicely. As of right now I have two pieces of hardware acting as servers. One is primarily a NAS server</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2024-02-02">Feb 2, 2024</time>
+                <span class="post-card-meta-length">4 min read</span>
+        </footer>
+
+    </div>
+
+</article>
+                        
+<article class="post-card post keep-ratio">
+
+    <a class="post-card-image-link" href="/coldbrew-recipe/">
+
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1561641377-f7456d23aa9b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIyfHxpY2VkJTIwY29mZmVlfGVufDB8fHx8MTcwNjc3MjYyNnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;300 300w,
+                    https://images.unsplash.com/photo-1561641377-f7456d23aa9b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIyfHxpY2VkJTIwY29mZmVlfGVufDB8fHx8MTcwNjc3MjYyNnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600 600w,
+                    https://images.unsplash.com/photo-1561641377-f7456d23aa9b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIyfHxpY2VkJTIwY29mZmVlfGVufDB8fHx8MTcwNjc3MjYyNnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;1000 1000w,
+                    https://images.unsplash.com/photo-1561641377-f7456d23aa9b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIyfHxpY2VkJTIwY29mZmVlfGVufDB8fHx8MTcwNjc3MjYyNnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="https://images.unsplash.com/photo-1561641377-f7456d23aa9b?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDIyfHxpY2VkJTIwY29mZmVlfGVufDB8fHx8MTcwNjc3MjYyNnww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;600"
+            alt="Cold Brew Recipe"
+            loading="lazy"
+        />
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/coldbrew-recipe/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Cold Brew Recipe
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Jump to Recipe
+
+Cold brewed coffee is a method of preparing coffee that does not involve traditional brewing. Instead, the coffee grounds are immersed into cold water for a prolonged period (above 12 hours). That way the distinct coffee aroma gets passed onto the water.
+
+This method, also called dutch</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2024-02-01">Feb 1, 2024</time>
+                <span class="post-card-meta-length">2 min read</span>
+        </footer>
+
+    </div>
+
+</article>
+                </div>
+            </aside>
+
+
+
+    </div>
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="https://www.mathisarend.com">Mathis Arend</a> &copy; 2024</section>
+            <nav class="site-footer-nav">
+                <ul class="nav">
+    <li class="nav-github"><a href="https://github.com/mathis98">GitHub</a></li>
+    <li class="nav-gitlab"><a href="https://gitlab.com/mathis2">GitLab</a></li>
+    <li class="nav-mastodon"><a href="https://mastodon.social/@hacktron">Mastodon</a></li>
+    <li class="nav-pixelfed"><a href="https://pixelfed.social/@hacktron">Pixelfed</a></li>
+    <li class="nav-soundcloud"><a href="https://soundcloud.com/dj-hacktron">SoundCloud</a></li>
+    <li class="nav-about"><a href="https://www.mathisarend.com/about/">About</a></li>
+</ul>
+
+            </nav>
+            <div class="gh-powered-by"><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+        </div>
+    </footer>
+
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src="/assets/built/casper.js?v=9237915363"></script>
+<script>
+$(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+});
+</script>
+
+
+
+</body>
+</html>
